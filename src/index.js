@@ -1,23 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import { Title } from './App.js';
+import { Mission } from './App.js'
+import { Clicker } from './App.js';
 import reportWebVitals from './reportWebVitals';
+import { App } from './App.js';
+import { Header } from './Header.js';
 
-function Title() {
-  return <h1 className="greeting">Prototype</h1>;
-}
-function LearnMoreButton() {
-  return (
-    <button>Learn more</button>
-  );
-}
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Title />
-    <LearnMoreButton></LearnMoreButton>
+   <Title/>
+   <App/>
+   <div className='box'>
+    <Mission/>
+   </div>
+   <Header></Header>
   </React.StrictMode>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
