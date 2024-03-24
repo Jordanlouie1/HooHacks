@@ -1,6 +1,6 @@
 import React from "react";
  
-const Blogs = () => {
+const Home = () => {
     return (
         <div
             style={{
@@ -15,4 +15,4 @@ const Blogs = () => {
     );
 };
  
-export default Blogs;
+export default Home;

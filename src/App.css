@@ -34,26 +34,40 @@
 }
 
 .box{
-
   border: 1px;
   border-color: white;
   outline: white;
   display: flex;
   margin: 400px;
+  box-shadow: black 1px 5px 25px;
   margin-top: -80px;
-  box-shadow: black 1px 0 15px;
   padding:40px
+
 }
+
 
 body{
   background-color: white;
-  background-image: url('./assets/images/background.png');
+  background-image: url('./assets/images/background.jpg');
+  
 
 }
 .bodystyle{
   color: black;
   text-align: center;
   font-size: 30px;
+  font-family:"Roboto";
+  display: flex;
+  background-color: white;
+  margin-left: -39px;
+  margin-right:-39px;
+  margin-top: -39px;
+  margin-bottom: -39px;
+  padding: 40px;
+}
+.job-body-style{
+  color: black;
+  text-align: center;
   font-family:"Roboto";
   display: flex;
   background-color: white;
@@ -75,7 +89,9 @@ body{
   font-family:"Roboto";
   outline: black;
   text-shadow: 2px 3px 7px black;  
+  text-align: center;
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -85,3 +101,30 @@ body{
     transform: rotate(360deg);
   }
 }
+
+.jobPostStyle{
+  color: black;
+  text-align: left;
+  font-family:"Roboto";
+  font-size: 18px;
+  display: flex;
+  background-color: white;
+  margin-left: -39px;
+  margin-right:-39px;
+  margin-top: -39px;
+  margin-bottom: -300px;
+  padding-right: 30px;
+  padding-top: -30px;
+  padding-bottom: 30px;
+  
+
+  border: 1px;
+  border-color: white;
+  outline: white;
+  display: flex;
+  box-shadow: black 1px 5px 25px;
+}
+ul {
+	list-style-type: none;
+  }
+

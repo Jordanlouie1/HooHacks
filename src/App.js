@@ -8,13 +8,14 @@ import {
 	Routes,
 	Route,
 } from "react-router-dom";
-import Home from "./pages";
+import Home from "./pages/blogs";
 import About from "./pages/about";
 import JobBoard from "./pages/jobBoard";
 import People from "./pages/people";
 import Register from "./pages/signup";
 
 function App() {
+	
 	return (
 		<Router>
 			<Navbar />
@@ -29,6 +30,10 @@ function App() {
 		</Router>
 	);
 }
+
+
+  
+
 
 export default App;
 

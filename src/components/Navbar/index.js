@@ -2,6 +2,7 @@
 
 import React from "react";
 import logo from "../../assets/images/credibly.png";
+import Home from "../../pages/blogs.js";
 
 
 import {
@@ -12,6 +13,7 @@ import {
 	NavBtn,
 	NavBtnLink,
 } from "./navbarElements";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	return (
@@ -20,11 +22,8 @@ const Navbar = () => {
 				<Bars />
 
 				<NavMenu>
-					<div className="logo-container"> <img src={logo} onClick={()=>alert("loading")} width ="150" height ="50" alt="Logo"/></div>
-
-					<NavLink to="/about" >
-						About
-					</NavLink>
+					<Link className="logo-container"> <img src={logo} onClick={Home} width ="150" height ="50" alt="Logo"/></Link>
+					
 					<NavLink to="/jobBoard" activeStyle>
 						Job Board
 					</NavLink>
@@ -36,6 +35,9 @@ const Navbar = () => {
 					</NavLink>
 					<NavLink to="/register" activeStyle>
 						Register
+					</NavLink>
+					<NavLink to="/about" >
+						About
 					</NavLink>
 				</NavMenu>
 				<NavBtn>
