@@ -1,20 +1,32 @@
-// pages/team.js
-
-import React from "react";
-
-const Teams = () => {
-	return (
-		<div
-			style={{
-				display: "flex",
-				justifyContent: "centre",
-				alignItems: "centre",
-				height: "100vh",
-			}}
-		>
-			<h1>Welcome to GeeksforGeeks Team</h1>
-		</div>
-	);
-};
-
-export default Teams;
+import React, { useState, useEffect } from "react";
+function Team() {
+  const [team, setTeam] = useState(null);
+  useEffect(() => {
+    fetch("https://us-east-1.aws.data.mongodb-api.com/app/data-txhel/endpoint/data/v1/", {
+      method: "POST",
+      headers: {
+        "api-key":{APIKEY},
+        'Content-Type': 'application/json',
+        'Access-Control-Request-Headers': '*' 
+      },
+      data: {
+      "dataSource": "Cluster0",
+      "database": "HooHacks",
+      "collection": "Employees",
+      }
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setPeople(data[0].people);
+        console.log(data);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+  return (
+    <div>
+      <h2>People of the day:</h2>
+      {people && <p>{people}</p>}
+    </div>
+  );
+}
+export default Team;
