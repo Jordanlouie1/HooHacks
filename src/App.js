@@ -1,36 +1,33 @@
-import React from 'react'
-import './App.css';
-import logo from "./credibly.png"
+// filename -App.js
 
-export function Title() {
-    return (
-        <img src = {logo} className='greeting' onClick={()=>alert("loading")}></img>
-      );
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route,
+} from "react-router-dom";
+import Home from "./pages";
+import About from "./pages/about";
+import JobBoard from "./pages/jobBoard";
+import People from "./pages/people";
+import SignUp from "./pages/signup";
+
+function App() {
+	return (
+		<Router>
+			<Navbar />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/people" element={<People />} />
+				<Route path="/jobBoard" element={<JobBoard />} />
+				<Route path="/sign-up" element={<SignUp />} />
+			</Routes>
+		</Router>
+	);
 }
 
+export default App;
 
- export function LearnMoreButton() {
-    return (
-      <button>Learn More</button>
-    );
-  }
-  export function App() {
-    return (
-        <div className='sample-css'>Our Mission</div>
-        
-
-      );
-  }
-  export function Mission() {
-    return (
-        <div className='bodystyle'>Our mission is to empower individuals who are new to the community or transitioning from challenging circumstances by connecting them with meaningful employment opportunities. We believe in the dignity of work and the value of every person's contribution to society. We strive to bridge the gap between skilled laborers and local businesses, fostering a network of support and collaboration that uplifts both workers and employers. By providing a platform for connection and growth, we aim to enhance the economic well-being and social integration of those who are often overlooked, ensuring that everyone has the chance to build a stable, prosperous future.We believe there are many people out there who are overlooked due to reasons such as past issues, etc. Whether you're a returning citizen, a refugee, or have faced other challenges in your past, Credibly is here to assist you in finding employment opportunities that match your skills and aspirations.</div>
-        
-
-      );
-
-
-    
-
-  }
-
- 
