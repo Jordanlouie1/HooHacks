@@ -1,6 +1,8 @@
 // components/Navbar/index.js
 
 import React from "react";
+import logo from "../../assets/images/credibly.png";
+
 
 import {
 	Nav,
@@ -18,6 +20,8 @@ const Navbar = () => {
 				<Bars />
 
 				<NavMenu>
+					<div className="logo-container"> <img src={logo} onClick={()=>alert("loading")} width ="150" height ="50" alt="Logo"/></div>
+
 					<NavLink to="/about" >
 						About
 					</NavLink>
@@ -30,8 +34,8 @@ const Navbar = () => {
 					<NavLink to="/companies" activeStyle>
 						Employers
 					</NavLink>
-					<NavLink to="/sign-up" activeStyle>
-						Sign Up
+					<NavLink to="/register" activeStyle>
+						Register
 					</NavLink>
 				</NavMenu>
 				<NavBtn>
