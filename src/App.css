@@ -41,7 +41,9 @@
   margin: 400px;
   box-shadow: black 1px 5px 25px;
   margin-top: -80px;
-  padding:40px
+  padding:40px;
+  background-color: white;
+  
 
 }
 
@@ -49,9 +51,11 @@
 body{
   background-color: white;
   background-image: url('./assets/images/background.jpg');
-  
+
 
 }
+
+
 .bodystyle{
   color: black;
   text-align: center;
@@ -59,8 +63,6 @@ body{
   font-family:"Roboto";
   display: flex;
   background-color: white;
-  margin-left: -39px;
-  margin-right:-39px;
   margin-top: -39px;
   margin-bottom: -39px;
   padding: 40px;
@@ -79,16 +81,17 @@ body{
 }
 
 .sample-css {
-  min-height:30vh;
+  height:125px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(5px + 7vmin);
+  font-size: calc(9px + 7vmin);
   color: white;
   font-family:"Roboto";
   outline: black;
-  text-shadow: 2px 3px 7px black;  
+  text-shadow: 4px 2px 10px black;  
   text-align: center;
 }
 
@@ -128,3 +131,67 @@ ul {
 	list-style-type: none;
   }
 
+.logo-container{
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+.main-image{
+  background-image: url('./assets/images/Mainimage.jpg');}
+
+
+  .signinbox{
+    border: 1px;
+    border-color: white;
+    outline: white;
+    display: flex;
+    margin-left: 700px;
+    margin-right: 720px;
+    box-shadow: black 1px 5px 25px;
+    background-color: (255,255,255,0.5);
+    padding: 20px;
+    justify-content: center;
+    
+    
+  
+  }
+  .signin { 
+    
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(9px + 1vmin);
+    color: black;
+    font-family:"Roboto";
+    outline: black;
+    text-align: center;
+    justify-content:space-between;
+
+  }
+  .inputBox{
+    margin: 5px;
+  }
+  .mainH1{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-size: 125px;
+    color: white;
+    text-shadow: 4px 2px 15px #5783db;  
+    margin: 0px;
+    margin-top: 125px;
+  
+  }
+
+  #names{
+    height: px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 1px 2px black;  
+  }

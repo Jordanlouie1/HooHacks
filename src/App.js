@@ -8,11 +8,12 @@ import {
 	Routes,
 	Route,
 } from "react-router-dom";
-import Home from "./pages/blogs";
+import Home from "./pages/home";
 import About from "./pages/about";
 import JobBoard from "./pages/jobBoard";
 import People from "./pages/people";
-import Register from "./pages/signup";
+import Register from "./pages/register";
+import SignIn from "./pages/signin";
 
 function App() {
 	
@@ -20,12 +21,12 @@ function App() {
 		<Router>
 			<Navbar />
 			<Routes>
-
-				<Route path="/logo-container" element={<Home />} />
+				<Route path="/home" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/people" element={<People />} />
 				<Route path="/jobBoard" element={<JobBoard />} />
-				<Route path="/sign-up" element={<Register />} />
+				<Route path="/register" element={<Register />} />
+				<Route path="/signin" element={<SignIn />} />
 			</Routes>
 		</Router>
 	);

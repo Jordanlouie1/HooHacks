@@ -16,7 +16,7 @@ const People = () => {
                       <li><h1>Skills</h1></li>
 					  <p1>Multitasking <br /> Knowledge of Food Safety <br /> Time Management <br /> Stress Resistance <br /> Customer Service <br /></p1>
                       <li><h1>Reviews</h1></li>
-					  <p1>blahblah</p1>
+					  <p1>Taylor Hansen is very hard working, she is polite and does her job effeciently! - Leslie Baker</p1>
 					  <li><h1>Timeline</h1></li>
 					  
 <pi>January 2010 - December 2012: <br/> The worker started their career in Seattle, Washington, as a Junior Graphic Designer at Creative Minds Inc., where they were responsible for assisting in the design of marketing materials and company branding efforts.<br/>
@@ -38,7 +38,7 @@ July 2015 - August 2017: <br/> Transitioned to a role in Austin, Texas, as a Sen
                       <li><h1>Skills</h1></li>
 					  <p1>Multitasking <br /> Knowledge of Food Safety <br /> Time Management <br /> Stress Resistance <br /> Customer Service <br /></p1>
                       <li><h1>Reviews</h1></li>
-					  <p1>blahblah</p1>
+					  <p1>He may come off as scary at first, but he is well-mannered and does his job without questions asked. - Bob Mallard</p1>
 					  <li><h1>Timeline</h1></li>
 <pi><pi>January 2015 - December 2017:  <br/> The individual began their career in Atlanta, Georgia, as a Customer Service Representative at QuickResolve Solutions, a company specializing in software support. They were responsible for handling customer inquiries, providing technical support, and ensuring customer satisfaction.<br/>
 
