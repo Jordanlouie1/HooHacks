@@ -7,6 +7,13 @@ We built the website using React and MongoDB, with a mix of back-end and front-e
 
 Learning how to use React for the first time and connecting to the database.
 
+Homepage
+![image](https://github.com/Jordanlouie1/HooHacks/assets/21312727/1fd72a12-53b9-443e-863a-a4c0b1e35af3)
+Jobs Page
+![image](https://github.com/Jordanlouie1/HooHacks/assets/21312727/061a5ffa-717a-4f14-b881-9199dec5cb5a)
+Employees Page
+![image](https://github.com/Jordanlouie1/HooHacks/assets/21312727/955825de-998c-4dc3-966e-43652651fe0a)
+
 ## Accomplishments that we're proud of
 We're proud of being able to create a functional website using the React library from knowing very little to nothing about it.
 ## What we learned
